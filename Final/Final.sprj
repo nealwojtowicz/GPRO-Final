@@ -20,6 +20,17 @@
 				</item>
 			</items>
 			<itemvalues />
+			<variables>
+				<variable type="float4x4" name="uViewMatrix" system="View" />
+				<variable type="float4x4" name="uModelMatrix" system="GeometryTransform" />
+				<variable type="float4x4" name="uProjMatrix" system="Projection" />
+				<variable type="float2" name="uResolution" system="ViewportSize" />
+				<variable type="int" name="uTex">
+					<row>
+						<value>0</value>
+					</row>
+				</variable>
+			</variables>
 			<macros />
 		</pass>
 	</pipeline>
@@ -27,12 +38,12 @@
 	<cameras />
 	<settings>
 		<entry type="property" name="gCube" item="pipe" />
-		<entry type="file" name="Test" shader="vs" />
 		<entry type="file" name="Test" shader="ps" />
+		<entry type="file" name="Test" shader="vs" />
 		<entry type="camera" fp="false">
 			<distance>4</distance>
 			<pitch>28</pitch>
-			<yaw>317</yaw>
+			<yaw>226</yaw>
 			<roll>360</roll>
 		</entry>
 		<entry type="clearcolor" r="0" g="0" b="0" a="0" />
