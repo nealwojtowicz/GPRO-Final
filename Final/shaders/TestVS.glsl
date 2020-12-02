@@ -18,4 +18,5 @@ void main()
 	mat4 modelViewProjMatrix = uProjMatrix * uViewMatrix * uModelMatrix;
 	vPos = modelViewProjMatrix * aPos;
 	gl_Position = vPos;
+	vTexcoord = aTexCoord;
 }
