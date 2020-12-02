@@ -2,8 +2,8 @@
 <project version="2">
 	<pipeline>
 		<pass name="pScene" type="shader" active="true">
-			<shader type="vs" path="shaders\TestVS.glsl" entry="main" />
-			<shader type="ps" path="shaders\TestPS.glsl" entry="main" />
+			<shader type="vs" path="shaders\Final_pSceneVS.glsl" entry="main" />
+			<shader type="ps" path="shaders\Final_pScenePS.glsl" entry="main" />
 			<inputlayout>
 				<item value="Position" semantic="POSITION" />
 				<item value="Normal" semantic="NORMAL" />
@@ -16,270 +16,15 @@
 					<width>1</width>
 					<height>1</height>
 					<depth>1</depth>
-					<scaleX>7</scaleX>
-					<x>-4</x>
-					<z>9</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall2" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleX>7</scaleX>
-					<x>4</x>
-					<z>9</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall3" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleX>11</scaleX>
-					<z>7</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall4" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleZ>17</scaleZ>
-					<x>7</x>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall5" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleZ>17</scaleZ>
-					<x>-7</x>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall6" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleX>7</scaleX>
-					<x>-4</x>
-					<z>-9</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall7" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleX>7</scaleX>
-					<x>4</x>
-					<z>-9</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall8" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleX>4</scaleX>
-					<x>3.5</x>
-					<z>5</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall9" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleX>6</scaleX>
-					<x>-2.5</x>
-					<z>5</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall10" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleX>9</scaleX>
-					<x>1</x>
-					<z>3</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall11" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleX>5</scaleX>
-					<x>1</x>
-					<z>1</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall12" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleX>3</scaleX>
-					<x>-3</x>
-					<z>-7</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall13" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<x>-3</x>
-					<z>6</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall14" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<x>5</x>
-					<z>6</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall15" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleZ>7</scaleZ>
-					<x>-5</x>
-					<z>1</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall16" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleZ>4</scaleZ>
-					<x>-5</x>
-					<z>-5.5</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall17" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleZ>8</scaleZ>
-					<x>-3</x>
-					<z>-1.5</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall18" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleZ>2</scaleZ>
-					<x>-1</x>
-					<z>-0.5</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall19" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleZ>6</scaleZ>
-					<x>-1</x>
-					<z>-5.5</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall20" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleZ>9</scaleZ>
-					<x>1</x>
-					<z>-4</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall21" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleZ>3</scaleZ>
-					<x>3</x>
-					<z>-1</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall22" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleZ>4</scaleZ>
-					<x>3</x>
-					<z>-5.5</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall23" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleZ>10</scaleZ>
-					<x>5</x>
-					<z>-2.5</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall24" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<x>4</x>
-					<z>-7</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall25" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<x>-2</x>
-					<z>-5</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gWall26" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<x>-4</x>
-					<z>1</z>
-					<topology>TriangleList</topology>
-				</item>
-				<item name="gFloor" type="geometry">
-					<type>Cube</type>
-					<width>1</width>
-					<height>1</height>
-					<depth>1</depth>
-					<scaleX>15</scaleX>
-					<scaleZ>19</scaleZ>
-					<y>-1</y>
 					<topology>TriangleList</topology>
 				</item>
 			</items>
 			<itemvalues />
 			<variables>
+				<variable type="float2" name="uResolution" system="ViewportSize" />
+				<variable type="float4x4" name="uProjMatrix" system="Projection" />
 				<variable type="float4x4" name="uViewMatrix" system="View" />
 				<variable type="float4x4" name="uModelMatrix" system="GeometryTransform" />
-				<variable type="float4x4" name="uProjMatrix" system="Projection" />
-				<variable type="float2" name="uResolution" system="ViewportSize" />
 				<variable type="int" name="uTex">
 					<row>
 						<value>0</value>
@@ -293,18 +38,16 @@
 		<object type="texture" path="..\..\..\..\brick-texture-brick-texture-seamless.jpg" vflip="false" min_filter="Linear" mag_filter="Nearest" wrap_s="Repeat" wrap_t="Repeat">
 			<bind slot="0" name="pScene" />
 		</object>
-		<object type="texture" path="..\..\..\..\seamless-marble-tile-texture-all-design-creative.jpg" vflip="false" min_filter="Linear" mag_filter="Nearest" wrap_s="Repeat" wrap_t="Repeat" />
 	</objects>
 	<cameras />
 	<settings>
+		<entry type="property" name="gWall" item="pipe" />
 		<entry type="file" name="pScene" shader="ps" />
 		<entry type="file" name="pScene" shader="vs" />
-		<entry type="pinned" name="uProjMatrix" />
-		<entry type="pinned" name="uViewMatrix" />
 		<entry type="camera" fp="false">
-			<distance>22</distance>
-			<pitch>74</pitch>
-			<yaw>270</yaw>
+			<distance>4</distance>
+			<pitch>89</pitch>
+			<yaw>268</yaw>
 			<roll>360</roll>
 		</entry>
 		<entry type="clearcolor" r="0" g="0" b="0" a="0" />

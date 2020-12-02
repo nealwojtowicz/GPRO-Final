@@ -19,6 +19,5 @@ in float vIntensity;
 void main()
 {
 	vec4 col = texture(uTex, vTexcoord);
-	//col = vec4(1.0, 0.5, 0.0, 1.0);
 	rtFragColor = col;
 }
