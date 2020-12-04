@@ -275,9 +275,9 @@
 				</item>
 			</items>
 			<itemvalues>
-				<value variable="uTex" for="gFloor">
+				<value variable="uIsWall" for="gFloor">
 					<row>
-						<value>1</value>
+						<value>false</value>
 					</row>
 				</value>
 			</itemvalues>
@@ -286,9 +286,9 @@
 				<variable type="float4x4" name="uProjMatrix" system="Projection" />
 				<variable type="float4x4" name="uViewMatrix" system="View" />
 				<variable type="float4x4" name="uModelMatrix" system="GeometryTransform" />
-				<variable type="int" name="uTex">
+				<variable type="bool" name="uIsWall">
 					<row>
-						<value>0</value>
+						<value>true</value>
 					</row>
 				</variable>
 			</variables>
@@ -307,10 +307,11 @@
 	<settings>
 		<entry type="file" name="pScene" shader="vs" />
 		<entry type="file" name="pScene" shader="ps" />
+		<entry type="pinned" name="uIsWall" owner="pScene" />
 		<entry type="camera" fp="false">
 			<distance>33</distance>
-			<pitch>53</pitch>
-			<yaw>3</yaw>
+			<pitch>80</pitch>
+			<yaw>10</yaw>
 			<roll>360</roll>
 		</entry>
 		<entry type="clearcolor" r="0" g="0" b="0" a="0" />

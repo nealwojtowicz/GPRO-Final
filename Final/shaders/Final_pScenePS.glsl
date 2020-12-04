@@ -6,8 +6,10 @@ precision highp float;
 
 layout (location = 0) out vec4 rtFragColor;
 
-uniform sampler2D uTex;
+uniform sampler2D uTexWall;
+uniform sampler2D uTexFloor;
 uniform vec2 uResolution;
+uniform bool uIsWall;
 
 in vec2 vTexcoord;
 in vec4 vPos;
@@ -18,7 +20,16 @@ in float vIntensity;
 
 void main()
 {
-	vec4 col = texture(uTex, vTexcoord);
-	//col = vec4(1.0, 0.5, 0.0, 1.0);
+	vec4 col;
+	
+	if(uIsWall)
+	{
+		col = texture(uTexWall, vTexcoord);
+	}
+	
+	else
+	{
+		col = texture(uTexFloor, vTexcoord);
+	}
 	rtFragColor = col;
 }
