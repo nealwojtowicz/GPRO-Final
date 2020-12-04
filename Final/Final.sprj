@@ -280,6 +280,138 @@
 						<value>false</value>
 					</row>
 				</value>
+				<value variable="uScale" for="gWall">
+					<row>
+						<value>7</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall1">
+					<row>
+						<value>7</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall2">
+					<row>
+						<value>17</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall3">
+					<row>
+						<value>17</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall4">
+					<row>
+						<value>7</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall5">
+					<row>
+						<value>7</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall6">
+					<row>
+						<value>11</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall7">
+					<row>
+						<value>6</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall8">
+					<row>
+						<value>4</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall9">
+					<row>
+						<value>9</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall10">
+					<row>
+						<value>5</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall11">
+					<row>
+						<value>3</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall14">
+					<row>
+						<value>7</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall15">
+					<row>
+						<value>8</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall16">
+					<row>
+						<value>10</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall17">
+					<row>
+						<value>3</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall18">
+					<row>
+						<value>4</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall19">
+					<row>
+						<value>9</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall20">
+					<row>
+						<value>2</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall21">
+					<row>
+						<value>6</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gWall22">
+					<row>
+						<value>4</value>
+						<value>1</value>
+					</row>
+				</value>
+				<value variable="uScale" for="gFloor">
+					<row>
+						<value>19</value>
+						<value>15</value>
+					</row>
+				</value>
 			</itemvalues>
 			<variables>
 				<variable type="float2" name="uResolution" system="ViewportSize" />
@@ -289,6 +421,12 @@
 				<variable type="bool" name="uIsWall">
 					<row>
 						<value>true</value>
+					</row>
+				</variable>
+				<variable type="float2" name="uScale">
+					<row>
+						<value>1</value>
+						<value>1</value>
 					</row>
 				</variable>
 			</variables>
@@ -307,11 +445,11 @@
 	<settings>
 		<entry type="file" name="pScene" shader="vs" />
 		<entry type="file" name="pScene" shader="ps" />
-		<entry type="pinned" name="uIsWall" owner="pScene" />
+		<entry type="pinned" name="uScale" owner="pScene" />
 		<entry type="camera" fp="false">
-			<distance>33</distance>
-			<pitch>80</pitch>
-			<yaw>10</yaw>
+			<distance>14</distance>
+			<pitch>20</pitch>
+			<yaw>2</yaw>
 			<roll>360</roll>
 		</entry>
 		<entry type="clearcolor" r="0" g="0" b="0" a="0" />
