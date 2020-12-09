@@ -18,14 +18,5 @@ void main()
 {
 	vec4 col;
 	
-	if(uIsWall)
-	{
-		col = texture(uTexWall, vTexcoord);
-	}
-	
-	else
-	{
-		col = texture(uTexFloor, vTexcoord);
-	}
 	rtFragColor = col;
 }
