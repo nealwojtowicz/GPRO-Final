@@ -13,10 +13,6 @@ uniform bool uIsWall;
 
 in vec2 vTexcoord;
 in vec4 vPos;
-in vec4 vColor;
-in vec4 vNormal;
-in vec4 vLight;
-in float vIntensity;
 
 void main()
 {
