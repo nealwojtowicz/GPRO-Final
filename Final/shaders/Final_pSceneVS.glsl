@@ -6,6 +6,7 @@ layout (location = 2) in vec2 aTexCoord;
 
 uniform mat4 uModelMatrix, uViewMatrix, uProjMatrix;
 uniform vec2 uScale;
+uniform vec2 uResolution;
 
 out vec2 vTexcoord;
 out vec4 vPos;

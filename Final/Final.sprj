@@ -547,9 +547,7 @@
 	</objects>
 	<cameras />
 	<settings>
-		<entry type="property" name="gWall2" item="pipe" />
-		<entry type="file" name="pLighting" shader="ps" />
-		<entry type="file" name="pLighting" shader="vs" />
+		<entry type="property" name="gWall3" item="pipe" />
 		<entry type="file" name="pScene" shader="ps" />
 		<entry type="file" name="pScene" shader="vs" />
 		<entry type="pinned" name="uScale" owner="pScene" />
@@ -557,11 +555,11 @@
 		<entry type="pinned" name="uViewMatrix" owner="pLighting" />
 		<entry type="pinned" name="uIsWall" owner="pLighting" />
 		<entry type="camera" fp="true">
-			<positionX>-3.10296822</positionX>
-			<positionY>0.11935699</positionY>
-			<positionZ>-5.02400255</positionZ>
-			<yaw>540.500122</yaw>
-			<pitch>-1.70003152</pitch>
+			<positionX>-2.01404452</positionX>
+			<positionY>0.0163987856</positionY>
+			<positionZ>1.96133459</positionZ>
+			<yaw>359.749176</yaw>
+			<pitch>-3.10003114</pitch>
 		</entry>
 		<entry type="clearcolor" r="0" g="0" b="0" a="0" />
 		<entry type="usealpha" val="false" />
