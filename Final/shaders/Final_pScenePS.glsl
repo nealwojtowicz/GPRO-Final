@@ -35,7 +35,7 @@ void main()
 	vec4 N = normalize(vNormal);
 	vec4 L = normalize(vLight - vPos);
 	float diffCoe = max(0.0, dot(N, L));
-	float dist = distance(vLight, vPos);
+	float dist = distance(vLight, vPos + 0.5);
 	float atten = 1.0 / (1.0 + dist/vIntensity + (dist * dist)/(vIntensity * vIntensity));
 	float diffInt = diffCoe * atten;
 	phongModel = col * vec4(1.0) * diffInt;

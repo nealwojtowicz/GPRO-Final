@@ -6,8 +6,6 @@ precision highp float;
 
 layout (location = 0) out vec4 rtFragColor;
 
-uniform sampler2D uTexWall;
-uniform sampler2D uTexFloor;
 uniform vec2 uResolution;
 uniform bool uIsWall;
 
