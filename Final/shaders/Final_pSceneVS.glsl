@@ -24,7 +24,7 @@ void main()
 	gl_Position = vPos;
 	vTexcoord = aTexCoord * uScale;
 	
-	vec4 lightPos = vec4(0.0, 0.0, 2.0, 1.0);
+	vec4 lightPos = vec4(0.0, 0.0, 3.0, 2.0);
 	mat3 normalMat = inverse(transpose(mat3(modelViewMatrix)));
 	vec3 nrm = normalMat * aNormal;
 	
