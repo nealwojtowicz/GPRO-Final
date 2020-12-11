@@ -453,86 +453,6 @@
 			<itemvalues />
 			<macros />
 		</pass>
-		<pass name="pLighting" type="shader" active="true" collapsed="true">
-			<shader type="vs" path="shaders\pLightingVS.glsl" entry="main" />
-			<shader type="ps" path="shaders\pLightingPS.glsl" entry="main" />
-			<inputlayout>
-				<item value="Position" semantic="POSITION" />
-				<item value="Normal" semantic="NORMAL" />
-				<item value="Texcoord" semantic="TEXCOORD0" />
-			</inputlayout>
-			<rendertexture />
-			<items />
-			<itemvalues />
-			<variables>
-				<variable type="float4x4" name="uProjMatrix">
-					<row>
-						<value>0</value>
-						<value>0</value>
-						<value>0</value>
-						<value>0</value>
-					</row>
-					<row>
-						<value>0</value>
-						<value>0</value>
-						<value>0</value>
-						<value>0</value>
-					</row>
-					<row>
-						<value>0</value>
-						<value>0</value>
-						<value>0</value>
-						<value>0</value>
-					</row>
-					<row>
-						<value>0</value>
-						<value>0</value>
-						<value>0</value>
-						<value>0</value>
-					</row>
-				</variable>
-				<variable type="float4x4" name="uViewMatrix">
-					<row>
-						<value>0</value>
-						<value>0</value>
-						<value>0</value>
-						<value>0</value>
-					</row>
-					<row>
-						<value>0</value>
-						<value>0</value>
-						<value>0</value>
-						<value>0</value>
-					</row>
-					<row>
-						<value>0</value>
-						<value>0</value>
-						<value>0</value>
-						<value>0</value>
-					</row>
-					<row>
-						<value>0</value>
-						<value>0</value>
-						<value>0</value>
-						<value>0</value>
-					</row>
-				</variable>
-				<variable type="float4x4" name="uModelMatrix" system="GeometryTransform" />
-				<variable type="float2" name="uScale">
-					<row>
-						<value>0</value>
-						<value>0</value>
-					</row>
-				</variable>
-				<variable type="float2" name="uResolution" system="ViewportSize" />
-				<variable type="bool" name="uIsWall">
-					<row>
-						<value>false</value>
-					</row>
-				</variable>
-			</variables>
-			<macros />
-		</pass>
 	</pipeline>
 	<objects>
 		<object type="texture" path="..\wallTexture.jpg" vflip="false" min_filter="Linear" mag_filter="Nearest" wrap_s="Repeat" wrap_t="Repeat">
@@ -548,12 +468,10 @@
 	<cameras />
 	<settings>
 		<entry type="property" name="gWall8" item="pipe" />
-		<entry type="file" name="pLighting" shader="ps" />
-		<entry type="file" name="pLighting" shader="vs" />
 		<entry type="pinned" name="uScale" owner="pScene" />
-		<entry type="pinned" name="uProjMatrix" owner="pLighting" />
-		<entry type="pinned" name="uViewMatrix" owner="pLighting" />
-		<entry type="pinned" name="uIsWall" owner="pLighting" />
+		<entry type="pinned" name="uProjMatrix" />
+		<entry type="pinned" name="uViewMatrix" />
+		<entry type="pinned" name="uIsWall" />
 		<entry type="camera" fp="true">
 			<positionX>-2.24768066</positionX>
 			<positionY>-0.182510078</positionY>
